@@ -4,7 +4,7 @@ Para usarlas, copiá el archivo de la carpeta [`plantillas/`](https://github.com
 
 ## Ticket de incidente
 
-Va en `docs/capitulos/capNN-*/tickets/TICKET-NNN.md`, con NNN = número del Issue.
+Va en `docs/capitulos/capNN-*/tickets/LL-NN.md`, con la clave del ticket de Jira.
 
 ````markdown
 --8<-- "plantillas/ticket.md"

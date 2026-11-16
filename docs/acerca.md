@@ -17,7 +17,7 @@ Para pasar de estudiar redes en papel a operarlas: diseñar, configurar, romper,
 ## Contacto
 
 - GitHub: [adriangallicet](https://github.com/adriangallicet)
-- LinkedIn: <!-- TODO(Adrián): pegar URL --> pendiente
+- LinkedIn: [adriangallicet](https://www.linkedin.com/in/adriangallicet)
 
 ## Cómo está hecho este sitio
 

@@ -19,8 +19,8 @@ Antes de ir al garage, armás tu valija de herramientas: un entorno de trabajo, 
 - [x] Escribir el [estándar de documentación](../../referencia/estandar-documentacion.md).
 - [x] Crear las plantillas de ticket, cambio, ADR y postmortem ([ver](../../referencia/plantillas.md)).
 - [x] Script de saneo de secretos (`scripts/sanear_configs.py`) y verificación automática en el CI.
-- [ ] Publicar el sitio en GitHub Pages.
-- [ ] Configurar GitHub Issues + Projects: etiquetas (`scripts/crear_etiquetas.sh`) y tablero kanban.
+- [x] Publicar el sitio en GitHub Pages.
+- [ ] Crear el sitio de Jira Service Management (proyecto `LL`, tipos de solicitud, prioridades P1 a P4, personajes como clientes).
 - [ ] Instalar Packet Tracer y comprobar que tenga WLC, teléfonos IP y dispositivos IoT.
 
 ## Misiones secundarias
@@ -31,7 +31,7 @@ Antes de ir al garage, armás tu valija de herramientas: un entorno de trabajo, 
 ## Diseño y decisiones
 
 - [ADR-001](../../decisiones/adr-001-herramienta-sitio.md): Material for MkDocs para el sitio.
-- [ADR-002](../../decisiones/adr-002-gestion-tickets.md): GitHub Issues + Projects para los tickets.
+- [ADR-002](../../decisiones/adr-002-gestion-tickets.md): Jira Service Management para los tickets.
 
 ### Estructura del repo
 
@@ -40,10 +40,9 @@ lupulo-litoral-lab/
 ├── mkdocs.yml                 # configuración del sitio
 ├── requirements.txt           # versiones fijadas de MkDocs y Material
 ├── .github/
-│   ├── workflows/pages.yml    # verifica secretos, construye y publica
-│   └── ISSUE_TEMPLATE/        # formularios de incidente y cambio
+│   └── workflows/pages.yml    # verifica secretos, construye y publica
 ├── plantillas/                # ticket, cambio, ADR, postmortem
-├── scripts/                   # saneo de secretos, etiquetas de Issues
+├── scripts/                   # saneo de secretos
 ├── privado/                   # configs crudas (ignorado por git)
 └── docs/                      # todo lo que se publica
     ├── capitulos/
@@ -52,7 +51,7 @@ lupulo-litoral-lab/
     │       ├── diagrama.drawio + diagrama.png
     │       ├── configs/       # saneadas
     │       ├── capturas/      # .pcapng y capturas comentadas
-    │       └── tickets/       # TICKET-NNN.md
+    │       └── tickets/       # LL-NN.md (informe de cada ticket de Jira)
     ├── decisiones/            # ADRs
     ├── referencia/            # estándar, mapa de cobertura, inventario, plantillas
     └── tickets/               # índice de todos los tickets

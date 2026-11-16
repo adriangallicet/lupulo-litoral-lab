@@ -17,7 +17,7 @@ Tomamos solo lo práctico de cada uno.
 
 | Referente | Qué tomamos | Dónde se usa |
 | --- | --- | --- |
-| **ITIL** | Distinción entre *incidente* (restablecer el servicio ya), *problema* (causa raíz de incidentes repetidos) y *cambio* (modificación planificada, con plan y vuelta atrás). | Tickets, etiquetas de Issues |
+| **ITIL** | Distinción entre *incidente* (restablecer el servicio ya), *problema* (causa raíz de incidentes repetidos) y *cambio* (modificación planificada, con plan y vuelta atrás). | Tipos de ticket en Jira |
 | **NIST SP 800-61** | Estructura de análisis posterior a un incidente grave: cronología, causa, qué funcionó, acciones. | Postmortems (cap. 5 en adelante) |
 | **ADR** | Una página por decisión de diseño: contexto, decisión, alternativas, consecuencias. | `docs/decisiones/` |
 | **Diátaxis** | Cada documento es de un solo tipo (ver tabla abajo). | Todo el sitio |
@@ -150,11 +150,13 @@ flowchart LR
 
 Nombre de archivo de config: el hostname, en `.txt` (por ejemplo `LL-GAR-RT-EDGE01.txt`). Los `.pkt` de Packet Tracer van en la carpeta del capítulo, también sin contraseñas reales.
 
-## 7. Tickets, cambios e Issues
+## 7. Tickets, cambios y Jira
 
-- Todo trabajo arranca como **Issue** de GitHub con una etiqueta de tipo (`incidente`, `problema`, `cambio`, `docs`), una de prioridad, una de sede y una de capítulo.
-- El número del ticket **es** el número del Issue: el Issue #12 se documenta en `TICKET-012.md`. Así no hay dos numeraciones.
-- El Issue es el trabajo en curso; el `TICKET-NNN.md` en la carpeta del capítulo es el informe final que queda en el portfolio.
+Herramienta: Jira Service Management, proyecto con clave `LL` ([ADR-002](../decisiones/adr-002-gestion-tickets.md)).
+
+- Todo trabajo arranca como ticket en Jira, con tipo (incidente, problema, cambio, consulta), prioridad, sede y capítulo (como etiquetas de Jira: `sede-planta`, `cap-03`).
+- La clave de Jira **es** el nombre del ticket: `LL-12` se documenta en `docs/capitulos/capNN-*/tickets/LL-12.md`. Una sola numeración.
+- Jira es el trabajo en curso; el `LL-NN.md` es el informe final que queda en el portfolio. **Un ticket no se cierra en Jira hasta que su informe está en el repo.**
 
 | Prioridad | Criterio en Lúpulo Litoral | Ejemplo |
 | --- | --- | --- |
@@ -165,7 +167,7 @@ Nombre de archivo de config: el hostname, en `.txt` (por ejemplo `LL-GAR-RT-EDGE
 
 ## 8. Commits
 
-Formato: `tipo(sede): descripción #issue`
+Formato: `tipo(sede): descripción LL-NN` (la clave del ticket de Jira)
 
 | Tipo | Uso |
 | --- | --- |
@@ -178,12 +180,12 @@ Formato: `tipo(sede): descripción #issue`
 Ejemplos:
 
 ```text
-feat(bar): VLANs y trunk hacia el switch L3 #8
-fix(bar): ACL WIFI en dirección in #12
-docs(general): estándar de documentación v1 #1
+feat(bar): VLANs y trunk hacia el switch L3 LL-8
+fix(bar): ACL WIFI en dirección in LL-12
+docs(general): estándar de documentación v1
 ```
 
-`#12` enlaza el commit con el Issue; `fixes #12` lo cierra al llegar a `main`.
+Con la app *GitHub for Jira* instalada, la clave `LL-12` en el mensaje hace que el commit aparezca dentro del ticket.
 
 ## 9. Idioma y estilo
 

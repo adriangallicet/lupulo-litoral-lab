@@ -6,7 +6,7 @@
 | Solicitado por | |
 | Equipos afectados | |
 | Riesgo | bajo / medio / alto |
-| Issue | #NNN |
+| Ticket en Jira | LL-NN |
 
 ## Motivo
 

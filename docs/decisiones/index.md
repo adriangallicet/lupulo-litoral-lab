@@ -5,6 +5,6 @@ Cada decisión de diseño que no sea obvia queda registrada en un ADR (*Architec
 | ADR | Decisión | Estado | Capítulo |
 | --- | --- | --- | --- |
 | [ADR-001](adr-001-herramienta-sitio.md) | Material for MkDocs para el sitio de documentación | Aceptada | 0 |
-| [ADR-002](adr-002-gestion-tickets.md) | GitHub Issues + Projects para gestionar tickets | Propuesta | 0 |
+| [ADR-002](adr-002-gestion-tickets.md) | Jira Service Management para gestionar tickets | Aceptada | 0 |
 
 Plantilla: [ADR](../referencia/plantillas.md#adr).

@@ -54,9 +54,8 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/adriangallicet
-    # TODO(Adrián): reemplazar por tu URL real de LinkedIn
     - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/
+      link: https://www.linkedin.com/in/adriangallicet
 
 markdown_extensions:
   - abbr

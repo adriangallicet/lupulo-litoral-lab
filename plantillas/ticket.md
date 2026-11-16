@@ -5,7 +5,7 @@ tags:
   - tema-ccna
 ---
 
-# TICKET-NNN: título corto en palabras del cliente
+# LL-NN: título corto en palabras del cliente
 
 | Campo | Valor |
 | --- | --- |
@@ -13,7 +13,7 @@ tags:
 | Reportado por | Martín / Sofi / Lucas / Carla / alerta de monitoreo |
 | Sede | |
 | Prioridad | P1 a P4 |
-| Issue | [#NNN](https://github.com/adriangallicet/lupulo-litoral-lab/issues/NNN) |
+| Ticket en Jira | LL-NN |
 | Tiempo hasta resolver | |
 
 ## Síntoma
