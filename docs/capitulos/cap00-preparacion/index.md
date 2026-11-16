@@ -20,7 +20,8 @@ Antes de ir al garage, armás tu valija de herramientas: un entorno de trabajo, 
 - [x] Crear las plantillas de ticket, cambio, ADR y postmortem ([ver](../../referencia/plantillas.md)).
 - [x] Script de saneo de secretos (`scripts/sanear_configs.py`) y verificación automática en el CI.
 - [x] Publicar el sitio en GitHub Pages.
-- [ ] Crear el sitio de Jira Service Management (proyecto `LL`, tipos de solicitud, prioridades P1 a P4, personajes como clientes).
+- [x] Crear el sitio de Jira Service Management (`lupulo-litoral.atlassian.net`, proyecto `LL`).
+- [ ] Configurar Jira: tipos de solicitud del portal, personajes como clientes, componentes.
 - [ ] Instalar Packet Tracer y comprobar que tenga WLC, teléfonos IP y dispositivos IoT.
 
 ## Misiones secundarias

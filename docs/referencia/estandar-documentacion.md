@@ -158,12 +158,23 @@ Herramienta: Jira Service Management, proyecto con clave `LL` ([ADR-002](../deci
 - La clave de Jira **es** el nombre del ticket: `LL-12` se documenta en `docs/capitulos/capNN-*/tickets/LL-12.md`. Una sola numeración.
 - Jira es el trabajo en curso; el `LL-NN.md` es el informe final que queda en el portfolio. **Un ticket no se cierra en Jira hasta que su informe está en el repo.**
 
-| Prioridad | Criterio en Lúpulo Litoral | Ejemplo |
+Sitio: `lupulo-litoral.atlassian.net`. Cómo se mapea el proyecto a lo que trae el plan gratuito:
+
+| Tipo de ticket (ITIL) | En Jira | Tipo de solicitud del portal |
 | --- | --- | --- |
-| P1 | El negocio no puede operar | Ningún bar cobra con tarjeta |
-| P2 | Servicio degradado o una sede afectada | Paraná sin VPN |
-| P3 | Molestia con alternativa | La impresora de etiquetas no aparece |
-| P4 | Mejora o consulta | Documentar un SSID nuevo |
+| Incidente | `[System] Incident` | Reportar una falla |
+| Cambio | `[System] Service request` + etiqueta `cambio` | Solicitar un cambio |
+| Consulta | `[System] Service request` | Hacer una consulta |
+| Problema | `Tarea` + etiqueta `problema`, enlazada a los incidentes que la originaron | — (lo crea el agente) |
+
+| Prioridad | En Jira | Criterio en Lúpulo Litoral | Ejemplo |
+| --- | --- | --- | --- |
+| P1 | Highest | El negocio no puede operar | Ningún bar cobra con tarjeta |
+| P2 | High | Servicio degradado o una sede afectada | Paraná sin VPN |
+| P3 | Medium | Molestia con alternativa | La impresora de etiquetas no aparece |
+| P4 | Low | Mejora o consulta | Documentar un SSID nuevo |
+
+Etiquetas de Jira: `sede-garage`, `sede-bar`, `sede-planta`, `sede-gualeguaychu`, `sede-parana`, `sede-todas` y `cap-00` a `cap-07`.
 
 ## 8. Commits
 

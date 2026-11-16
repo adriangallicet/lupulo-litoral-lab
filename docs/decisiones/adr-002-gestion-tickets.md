@@ -22,10 +22,10 @@ La primera propuesta fue GitHub Issues + Projects. Se descartó por la razón de
 
 ## Decisión
 
-**Jira Service Management, plan gratuito** (hasta 3 agentes), en un sitio propio de Atlassian, con un proyecto de servicio de clave `LL`.
+**Jira Service Management, plan gratuito** (hasta 3 agentes), en un sitio propio de Atlassian, con un proyecto de servicio de clave `LL`: `lupulo-litoral.atlassian.net`.
 
 - Los personajes (Martín, Sofi, Lucas, Carla) reportan como *clientes* por el portal; Adrián atiende como *agente*.
-- Tipos de solicitud: incidente, problema, cambio y consulta. Si el plan gratuito no incluye algún tipo de trabajo de ITSM (por ejemplo, la gestión de cambios), se crea como tipo de solicitud común y se sigue el mismo flujo con la [plantilla de cambio](../referencia/plantillas.md#solicitud-de-cambio).
+- El plan gratuito trae solo *Incident*, *Service request* y *Tarea*: no hay tipos de Problema ni de Cambio. Los cambios se cargan como solicitud de servicio con la etiqueta `cambio` y siguen la [plantilla de cambio](../referencia/plantillas.md#solicitud-de-cambio); los problemas, como Tarea con la etiqueta `problema`. El mapeo completo está en el [estándar](../referencia/estandar-documentacion.md#7-tickets-cambios-y-jira).
 - Prioridades P1 a P4 según el [estándar](../referencia/estandar-documentacion.md#7-tickets-cambios-y-jira), y SLA de primera respuesta y de resolución si el plan los ofrece.
 - El ticket de Jira es el trabajo en curso; el informe `LL-NN.md` en la carpeta del capítulo es la evidencia pública. El sitio de Jira no es público, así que el portfolio se apoya en los informes.
 - Integración opcional con la app *GitHub for Jira*: los commits que mencionan `LL-NN` aparecen en el ticket.
