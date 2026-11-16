@@ -1,0 +1,29 @@
+name: Solicitud de cambio
+description: Modificación planificada de la red.
+title: "[CAMBIO] "
+labels: ["cambio"]
+body:
+  - type: input
+    id: solicita
+    attributes:
+      label: Solicitado por
+    validations:
+      required: true
+  - type: textarea
+    id: motivo
+    attributes:
+      label: Motivo
+      description: Qué necesidad del cliente justifica el cambio.
+    validations:
+      required: true
+  - type: dropdown
+    id: riesgo
+    attributes:
+      label: Riesgo
+      options: [Bajo, Medio, Alto]
+    validations:
+      required: true
+  - type: textarea
+    id: equipos
+    attributes:
+      label: Equipos afectados

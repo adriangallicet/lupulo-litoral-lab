@@ -1,0 +1,119 @@
+site_name: Lúpulo Litoral
+site_description: Home-lab de redes documentado como portfolio. Una cervecería que crece desde un garage hasta una empresa, y su consultor de redes.
+site_author: Adrián Gallicet
+site_url: https://adriangallicet.github.io/lupulo-litoral-lab/
+repo_url: https://github.com/adriangallicet/lupulo-litoral-lab
+repo_name: adriangallicet/lupulo-litoral-lab
+edit_uri: edit/main/docs/
+copyright: Adrián Gallicet · Lúpulo Litoral es una empresa ficticia; el trabajo técnico es real.
+
+theme:
+  name: material
+  language: es
+  icon:
+    logo: material/barley
+    repo: fontawesome/brands/github
+  favicon: assets/favicon.svg
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: amber
+      accent: deep orange
+      toggle:
+        icon: material/weather-night
+        name: Modo oscuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: amber
+      accent: deep orange
+      toggle:
+        icon: material/weather-sunny
+        name: Modo claro
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+    - content.action.edit
+    - content.tabs.link
+
+plugins:
+  - search:
+      lang: es
+  - tags
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/adriangallicet
+    # TODO(Adrián): reemplazar por tu URL real de LinkedIn
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.snippets:
+      base_path: ["."]
+      check_paths: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+nav:
+  - Inicio:
+      - index.md
+      - La historia: historia.md
+      - Acerca de: acerca.md
+  - Capítulos:
+      - capitulos/index.md
+      - "0. Preparación": capitulos/cap00-preparacion/index.md
+      - "1. El garage": capitulos/cap01-garage/index.md
+      - "2. El primer bar": capitulos/cap02-bar/index.md
+      - "3. La planta": capitulos/cap03-planta/index.md
+      - "4. Las sucursales": capitulos/cap04-sucursales/index.md
+      - "5. Dos proveedores": capitulos/cap05-dos-proveedores/index.md
+      - "6. Nos auditan": capitulos/cap06-auditoria/index.md
+      - "7. Ya somos empresa": capitulos/cap07-empresa/index.md
+  - Tickets: tickets/index.md
+  - Decisiones:
+      - decisiones/index.md
+      - "ADR-001 Herramienta del sitio": decisiones/adr-001-herramienta-sitio.md
+      - "ADR-002 Gestión de tickets": decisiones/adr-002-gestion-tickets.md
+  - Referencia:
+      - referencia/index.md
+      - Estándar de documentación: referencia/estandar-documentacion.md
+      - Mapa de cobertura: referencia/mapa-cobertura.md
+      - Inventario de equipos: referencia/inventario.md
+      - Plantillas: referencia/plantillas.md
+  - Etiquetas: etiquetas.md

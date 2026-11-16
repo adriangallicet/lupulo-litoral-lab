@@ -1,0 +1,24 @@
+# Configs crudas, con secretos. NUNCA se suben.
+# Flujo: exportás acá -> scripts/sanear_configs.py -> docs/capitulos/.../configs/
+privado/
+
+# Sitio generado por mkdocs build
+site/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Sistema operativo y editores
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+*.swp
+
+# Respaldos automáticos de draw.io y Packet Tracer
+*.bkp
+*.drawio.bkp
+.$*

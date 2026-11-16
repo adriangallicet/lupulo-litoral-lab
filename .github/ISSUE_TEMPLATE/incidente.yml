@@ -1,0 +1,32 @@
+name: Incidente
+description: Algo dejó de funcionar y hay que restablecerlo.
+title: "[INC] "
+labels: ["incidente"]
+body:
+  - type: dropdown
+    id: reporta
+    attributes:
+      label: Reportado por
+      options: [Martín, Sofi, Lucas, Carla, Alerta de monitoreo, Yo mismo]
+    validations:
+      required: true
+  - type: dropdown
+    id: prioridad
+    attributes:
+      label: Prioridad
+      description: Agregá también la etiqueta P1 a P4 correspondiente.
+      options: ["P1 - Crítico", "P2 - Alto", "P3 - Medio", "P4 - Bajo"]
+    validations:
+      required: true
+  - type: textarea
+    id: sintoma
+    attributes:
+      label: Síntoma
+      description: Qué ve el usuario, en sus palabras.
+    validations:
+      required: true
+  - type: textarea
+    id: notas
+    attributes:
+      label: Notas de diagnóstico
+      description: Lo que vas probando. El informe final va en docs/capitulos/.../tickets/TICKET-NNN.md

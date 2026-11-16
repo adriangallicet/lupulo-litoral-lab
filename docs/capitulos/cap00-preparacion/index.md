@@ -1,0 +1,68 @@
+---
+tags:
+  - cap00
+  - documentacion
+  - git
+---
+
+# 0. Preparación
+
+!!! note "Estado: en curso · Inicio: 2026-11-16"
+
+## El llamado
+
+Antes de ir al garage, armás tu valija de herramientas: un entorno de trabajo, un repo ordenado y una forma de documentar que puedas sostener durante todo el proyecto.
+
+## Núcleo
+
+- [x] Crear el repo `lupulo-litoral-lab` con su estructura y una página de presentación.
+- [x] Escribir el [estándar de documentación](../../referencia/estandar-documentacion.md).
+- [x] Crear las plantillas de ticket, cambio, ADR y postmortem ([ver](../../referencia/plantillas.md)).
+- [x] Script de saneo de secretos (`scripts/sanear_configs.py`) y verificación automática en el CI.
+- [ ] Publicar el sitio en GitHub Pages.
+- [ ] Configurar GitHub Issues + Projects: etiquetas (`scripts/crear_etiquetas.sh`) y tablero kanban.
+- [ ] Instalar Packet Tracer y comprobar que tenga WLC, teléfonos IP y dispositivos IoT.
+
+## Misiones secundarias
+
+- [ ] Instalar EVE-NG y levantar un FortiGate VM. Verificar qué permite la licencia de prueba (cifrado para IPsec, SD-WAN).
+- [ ] Revisar si Cisco Modeling Labs Free sirve para el cap. 5 (límite de nodos, imágenes, RAM).
+
+## Diseño y decisiones
+
+- [ADR-001](../../decisiones/adr-001-herramienta-sitio.md): Material for MkDocs para el sitio.
+- [ADR-002](../../decisiones/adr-002-gestion-tickets.md): GitHub Issues + Projects para los tickets.
+
+### Estructura del repo
+
+```text
+lupulo-litoral-lab/
+├── mkdocs.yml                 # configuración del sitio
+├── requirements.txt           # versiones fijadas de MkDocs y Material
+├── .github/
+│   ├── workflows/pages.yml    # verifica secretos, construye y publica
+│   └── ISSUE_TEMPLATE/        # formularios de incidente y cambio
+├── plantillas/                # ticket, cambio, ADR, postmortem
+├── scripts/                   # saneo de secretos, etiquetas de Issues
+├── privado/                   # configs crudas (ignorado por git)
+└── docs/                      # todo lo que se publica
+    ├── capitulos/
+    │   └── capNN-nombre/
+    │       ├── index.md       # historia, diseño y decisiones del capítulo
+    │       ├── diagrama.drawio + diagrama.png
+    │       ├── configs/       # saneadas
+    │       ├── capturas/      # .pcapng y capturas comentadas
+    │       └── tickets/       # TICKET-NNN.md
+    ├── decisiones/            # ADRs
+    ├── referencia/            # estándar, mapa de cobertura, inventario, plantillas
+    └── tickets/               # índice de todos los tickets
+```
+
+## Entregable
+
+Repo listo, estándar de documentación, plantillas y tablero.
+
+---
+
+!!! abstract "Summary (English)"
+    Chapter 0 sets up the toolkit: a public repository that doubles as a documentation site (Material for MkDocs on GitHub Pages), a documentation standard based on ITIL, NIST SP 800-61, ADRs and Diátaxis, templates for incidents, changes, ADRs and postmortems, and a script that redacts secrets from network configs before they are committed, enforced in CI.
