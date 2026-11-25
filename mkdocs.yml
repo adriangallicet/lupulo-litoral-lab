@@ -112,6 +112,7 @@ nav:
   - Referencia:
       - referencia/index.md
       - Estándar de documentación: referencia/estandar-documentacion.md
+      - Mesa de ayuda (Jira): referencia/mesa-de-ayuda.md
       - Mapa de cobertura: referencia/mapa-cobertura.md
       - Inventario de equipos: referencia/inventario.md
       - Plantillas: referencia/plantillas.md
