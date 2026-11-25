@@ -174,6 +174,28 @@ Sitio: `lupulo-litoral.atlassian.net`. Cómo se mapea el proyecto a lo que trae 
 | P3 | Medium | Molestia con alternativa | La impresora de etiquetas no aparece |
 | P4 | Low | Mejora o consulta | Documentar un SSID nuevo |
 
+### SLA
+
+| Prioridad | Primera respuesta | Resolución | Calendario |
+| --- | --- | --- | --- |
+| P1 (Highest) | 30 min | 4 h | 24/7 |
+| P2 (High) | 2 h | 8 h | 24/7 |
+| P3 (Medium) | 8 h hábiles (1 día) | 27 h hábiles (3 días) | Lun a vie, 9 a 18 (Buenos Aires) |
+| P4 (Low) | 9 h hábiles (1 día) | 45 h hábiles (5 días) | Lun a vie, 9 a 18 (Buenos Aires) |
+
+- La **primera respuesta** se detiene con una respuesta pública al cliente o al resolver.
+- La **resolución** se pausa en *Esperando por el cliente* y *Pending*: si se le pregunta algo al cliente, el ticket se pasa a ese estado.
+- Un SLA vencido no se esconde: se explica en el informe del ticket.
+
+### Resoluciones
+
+| Resolución | Cuándo |
+| --- | --- |
+| Hecho | Se resolvió lo pedido y se conoce la causa |
+| No se puede reproducir | La falla desapareció sin encontrar la causa |
+| Duplicado | Ya existe otro ticket por lo mismo (enlazarlo) |
+| No se hará | No corresponde, el cliente desistió o era una prueba |
+
 Etiquetas de Jira: `sede-garage`, `sede-bar`, `sede-planta`, `sede-gualeguaychu`, `sede-parana`, `sede-todas` y `cap-00` a `cap-07`.
 
 ## 8. Commits

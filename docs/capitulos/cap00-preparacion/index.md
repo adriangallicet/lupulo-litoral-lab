@@ -21,7 +21,8 @@ Antes de ir al garage, armás tu valija de herramientas: un entorno de trabajo, 
 - [x] Script de saneo de secretos (`scripts/sanear_configs.py`) y verificación automática en el CI.
 - [x] Publicar el sitio en GitHub Pages.
 - [x] Crear el sitio de Jira Service Management (`lupulo-litoral.atlassian.net`, proyecto `LL`).
-- [ ] Configurar Jira: tipos de solicitud del portal, personajes como clientes, componentes.
+- [x] Configurar Jira: tipos de solicitud del portal, clientes (Martín y Sofi, organización Lúpulo Litoral), resoluciones y SLA.
+- [ ] Traducir al español los campos de los formularios del portal.
 - [ ] Instalar Packet Tracer y comprobar que tenga WLC, teléfonos IP y dispositivos IoT.
 
 ## Misiones secundarias
