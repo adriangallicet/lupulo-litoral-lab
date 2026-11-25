@@ -22,7 +22,8 @@ Antes de ir al garage, armás tu valija de herramientas: un entorno de trabajo, 
 - [x] Publicar el sitio en GitHub Pages.
 - [x] Crear el sitio de Jira Service Management (`lupulo-litoral.atlassian.net`, proyecto `LL`).
 - [x] Configurar Jira: tipos de solicitud del portal, clientes (Martín y Sofi, organización Lúpulo Litoral), resoluciones y SLA.
-- [ ] Traducir al español los campos de los formularios del portal.
+- [x] Traducir al español los campos de los formularios del portal.
+- [x] Documentar [cómo funciona la mesa de ayuda](../../referencia/mesa-de-ayuda.md).
 - [ ] Instalar Packet Tracer y comprobar que tenga WLC, teléfonos IP y dispositivos IoT.
 
 ## Misiones secundarias
